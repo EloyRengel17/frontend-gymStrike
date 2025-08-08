@@ -13,7 +13,7 @@
 }
 
 .titulo_fondo_negro img {
-  max-width: 45vh; /* para no crecer demasiado en pantallas grandes dentro del móvil */
+  max-width: 35vh; /* para no crecer demasiado en pantallas grandes dentro del móvil */
   height: auto;
   margin: 0 auto;
   margin-right: -5rem;
@@ -21,7 +21,7 @@
 }
 
 .titulo_fondo_negro  h1 {
-  font-size: 15vw;  /* texto proporcional al ancho */
+  font-size: 19vw;  /* texto proporcional al ancho */
   line-height: 1;
    letter-spacing: 15px /*para la ceparacion entre las letras*/
 
@@ -49,9 +49,10 @@
   text-align: center;
   padding-top: 8rem;
   padding-bottom: 5rem;
+  max-width: 45rem;
 }
 .datos{
-  font-size: 3.5vh;
+  font-size: 3vh;
 }
 .datos p{
   color: #ffff;
