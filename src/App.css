@@ -26,12 +26,16 @@
    letter-spacing: 15px /*para la ceparacion entre las letras*/
 
 }
-.titulo_fondo_negro span {
+.titulo_fondo_negro h1 span  {
   
-  margin-left: -4rem;
+  
+ position: relative;
+ margin-left: -3rem;
+  top: 15px; /* mueve el span 10px hacia abajo */
+  
 }
 .titulo_fondo_negro .h1Abajo{
-  margin-top: -4rem;
+  margin-top: -3.5rem;
   padding-left: 3rem;
 }
 .ingreso {
