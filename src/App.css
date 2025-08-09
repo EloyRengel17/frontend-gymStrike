@@ -1,8 +1,9 @@
-/* #root {
+ #root {
   
  
+ 
 }
-*/
+
 
 .titulo_fondo_negro {
  
@@ -49,6 +50,7 @@
   width: 100vw;    /* ancho correcto */
   height: 100vh;   /* alto correcto */
   background-image: url('/fondo_tlfno.jpg');
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,6 +73,7 @@
 .datos input{
   border: none;            /* Sin borde */
   border-bottom: 1px solid #ccc; /* Línea fina solo abajo para estilo */
+  height: 100%;
   outline: none;           /* Quita el contorno al hacer foco */
   padding: 0.5rem 0;       
   background: transparent; /* Fondo transparente */
@@ -84,4 +87,54 @@ form button{
   margin-top: 2rem;
   color: black;
   background-color: yellow ;
+}
+
+.pantalla_desktop{
+ 
+ background-image: url("/fondo_desktop.jpg");
+ margin-top: -1rem;
+ padding-bottom: -1rem;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* imagen fija */
+  display: flex;
+  flex-wrap: wrap; /* permite que tus col-lg-6 se acomoden */
+}
+.pantalla_desktop > .col-lg-6 {
+  padding: 0 !important; /* evita padding extra */
+}
+
+.login-Desktop{
+ margin-top: 40vh;
+  
+ 
+}
+
+.titulo_desktop{
+ background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  height: 100%; /* ocupa el alto del padre */
+  padding: 2rem; /* opcional, para separar del borde */
+}
+@media (max-width: 1000px) {
+  .titulo_desktop {
+    justify-content: flex-start; /* en tablet empieza más arriba */
+    margin-top: 0rem; /* baja un poco sin usar márgenes negativos */
+  }
+  .login-Desktop{
+ margin-top: -45vh;
+  max-width: 200rem;
+}
+
+}
+@media (min-width: 850px) {
+  
+.datos{
+  font-size: 4vh;
+}
 }
