@@ -26,9 +26,13 @@
 
 .titulo_fondo_negro h1 {
   font-size: clamp(2rem, 15vw, 6rem);
-  letter-spacing: 15px;
-  line-height: 1; /* importante para que no suba/baje en móviles */
+  letter-spacing: 0.3em;  /* más proporcional */
+  line-height: 1;         /* evita que baje o suba */
+  white-space: nowrap;    /* evita que se parta en varias líneas */
+  overflow: hidden;       /* por si acaso */
+  text-overflow: ellipsis; /* no es crítico pero protege */
 }
+
 
 .titulo_fondo_negro h1 span  { 
  position: relative;
