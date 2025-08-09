@@ -22,9 +22,9 @@ function Login() {
             <div className="titulo_fondo_negro">
             <h1>
                 <img src={Logo} alt="" />
-              <span> GYM</span>  
+              <span translate="no"> GYM</span>  
             </h1>
-            <h1 className="h1Abajo">STRIKE</h1>
+            <h1 translate="no" className="h1Abajo">STRIKE</h1>
             </div>
             <div className="ingreso">
 
