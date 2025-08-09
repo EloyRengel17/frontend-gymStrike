@@ -24,12 +24,12 @@
  
 }
 
-.titulo_fondo_negro  h1 {
-  font-size: 19vw;  /* texto proporcional al ancho */
-  
-   letter-spacing: 15px /*para la ceparacion entre las letras*/
-
+.titulo_fondo_negro h1 {
+  font-size: clamp(2rem, 15vw, 6rem);
+  letter-spacing: 15px;
+  line-height: 1; /* importante para que no suba/baje en móviles */
 }
+
 .titulo_fondo_negro h1 span  { 
  position: relative;
  margin-left: -3rem;

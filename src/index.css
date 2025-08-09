@@ -28,7 +28,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden; /* previene scroll horizontal */
-  overflow-y: hidden; /* previene scroll vertical */
+ 
      /* para usar place-items */
   place-items: center;
 }
