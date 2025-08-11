@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 a {
@@ -23,7 +24,7 @@ a:hover {
 }
 
 html, body {
-  margin: -0.2rem;
+  margin: 0rem;
   padding: 0;
   width: 100vw;
   height: 100vh;

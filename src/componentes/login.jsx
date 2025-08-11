@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // 👈 para navegar
 import React from "react";
 import Logo from '/LOGOGYM.png';
 import "../App.css";
 
 function Login() {
      const [isMobile, setIsMobile] = useState(false);
+    const navigate = useNavigate(); // 👈 hook para cambiar de página
+
+
        useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
@@ -12,7 +16,9 @@ function Login() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-
+   const goToLanding = () => {
+    navigate("/landing"); // aquí debe coincidir con la ruta en App.jsx
+  };
   return (
     <>
         {!isMobile && (
@@ -37,6 +43,7 @@ function Login() {
                             <input type="password" /> 
                         </div>
                         <button>Ingresar</button>
+                         <button type="button" onClick={goToLanding}>Ir a landing</button>
                     </form>
            
             
@@ -65,6 +72,7 @@ function Login() {
                             <input type="password" /> 
                         </div>
                         <button>Ingresar</button>
+                         <button type="button" onClick={goToLanding}>ir a landing</button>
                     </form>
             </div>
          </div>

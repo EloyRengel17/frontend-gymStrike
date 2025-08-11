@@ -1,6 +1,7 @@
  #root {
   
- 
+ margin: -0.5rem;
+ padding: 0rem;
  
 }
 
@@ -47,13 +48,14 @@
 }
 .ingreso {
   margin-left: 0; /* mejor sin margen para evitar scroll */
-  width: 100vw;    /* ancho correcto */
+  width: 103vw;    /* ancho correcto */
   height: 100vh;   /* alto correcto */
   background-image: url('/fondo_tlfno.jpg');
   
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0rem;
 }
 
 

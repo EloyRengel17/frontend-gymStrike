@@ -1,0 +1,59 @@
+header{
+    margin: 0rem;
+    padding: 0rem;
+}
+.prueba {
+  background-color: aqua;
+}
+.fondo_imagen_landig {
+  background-image: url("fondo_ingreso.jpg");
+
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; /* imagen fija */
+}
+
+@media (max-width: 849px) {
+  .fondo_imagen_landig {
+    padding-bottom: 100vw;
+  background-position: center 70% ;
+   
+  }
+}
+@media (min-width:850px){
+    .fondo_imagen_landig{padding-bottom: 80vh;}
+}
+
+.titulo{
+    background-color: #191919;
+}
+.titulo_nombre{
+    margin-top: 1rem;
+  color: white;
+  padding: 1rem;
+ text-align: center;
+}
+.titulo_nombre .h1Abajo{
+    margin-top: -3rem;
+}
+.logo {
+  max-width: 35vh; /* para no crecer demasiado en pantallas grandes dentro del móvil */
+  height: auto;
+  margin: 0 auto;
+  margin-right: -5rem;
+  margin-left: -6rem;
+  margin-bottom: 0.5rem;
+}
+.informacion p{
+    color: #C5C4B1;
+}
+.titulo h1{
+    color: white;
+}
+.cantidad-persona{
+    background-color: yellow;
+      padding: 0px 8px;
+  /* Defining the polygon shape */
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
