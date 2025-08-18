@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  
   text-decoration: inherit;
 }
 a:hover {
@@ -29,7 +29,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden; /* previene scroll horizontal */
- 
+  background-color: black;
      /* para usar place-items */
   place-items: center;
 }

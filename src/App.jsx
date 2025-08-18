@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import MostrarCliente from './componentes/mostrar_clientes.jsx';
 import Login from './componentes/login.jsx';
 import Landing from './componentes/landing.jsx';
+import Ingreso from './componentes/ingreso.jsx';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/clientes" element={<MostrarCliente />} />
         <Route path="/landing" element={<Landing />} />
+        <Route path="/ingreso" element={<Ingreso />} />
       </Routes>
     </BrowserRouter>
   );
